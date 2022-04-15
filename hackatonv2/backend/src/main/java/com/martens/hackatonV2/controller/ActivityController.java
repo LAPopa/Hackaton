@@ -2,6 +2,7 @@ package com.martens.hackatonV2.controller;
 
 
 import com.martens.hackatonV2.entity.Activity;
+import com.martens.hackatonV2.entity.Client;
 import com.martens.hackatonV2.model.ActivityRegistrationModel;
 import com.martens.hackatonV2.service.ActivityService;
 import lombok.AllArgsConstructor;
@@ -42,6 +43,11 @@ public class ActivityController {
     @GetMapping("/activity/available")
     public Optional<List<Activity>> getAvailableActivities() {
         return activityService.getAvailableActivities();
+    }
+
+    @PostMapping("/activity/add-participant")
+    public void addParticipantToActivity(@RequestParam String activityName, @RequestParam String workerEmail){
+        activityService.addParticipantsToActivity(activityName, workerEmail);
     }
 
 }

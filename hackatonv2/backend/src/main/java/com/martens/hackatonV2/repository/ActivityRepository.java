@@ -1,6 +1,7 @@
 package com.martens.hackatonV2.repository;
 
 import com.martens.hackatonV2.entity.Activity;
+import com.martens.hackatonV2.entity.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -23,4 +24,5 @@ public interface ActivityRepository extends JpaRepository<Activity, Long> {
 
     @Query("SELECT a from Activity a where a.isActive = true ")
     Optional<List<Activity>> findActivityByIsActive();
+
 }

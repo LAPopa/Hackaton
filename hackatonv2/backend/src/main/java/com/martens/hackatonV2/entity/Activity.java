@@ -5,6 +5,8 @@ import com.martens.hackatonV2.utils.enums.ActivityType;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter @Setter
@@ -15,7 +17,7 @@ public class Activity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String name;
     @Column(nullable = false)
     private String activityType;
@@ -24,6 +26,8 @@ public class Activity {
     private int availableSpots; // how many people can still enroll
     private int duration; // !!!! should use a date format?
     private boolean isActive; // is the activity ongoing?
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<String> participantsEmails;
 
     public Activity(String name, String activityType, int capacity, int duration) {
         this.name = name;
@@ -32,6 +36,9 @@ public class Activity {
         this.availableSpots = capacity; // initially all spots are available
         this.duration = duration;
         this.isActive = true;
+        this.participantsEmails = new ArrayList<>();
 
     }
+
+
 }
