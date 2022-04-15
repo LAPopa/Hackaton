@@ -67,7 +67,15 @@ public class AuthController {
 
     @PostMapping("/register")
     ResponseEntity<Object> registerClient(@RequestBody Client client) {
-        client.setRoles(List.of("USER"));
+        client.setRoles(List.of("ROLE_USER"));
+        client.setPassword(passwordEncoder.encode(client.getPassword()));
+        clients.save(client);
+        return new ResponseEntity<>("Created", HttpStatus.CREATED);
+    }
+
+    @PostMapping("/register-worker")
+    ResponseEntity<Object> registerWorker(@RequestBody Client client) {
+        client.setRoles(List.of("ROLE_WORKER"));
         client.setPassword(passwordEncoder.encode(client.getPassword()));
         clients.save(client);
         return new ResponseEntity<>("Created", HttpStatus.CREATED);
