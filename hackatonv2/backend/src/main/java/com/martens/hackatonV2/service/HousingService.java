@@ -9,6 +9,9 @@ import lombok.Getter;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 @Getter
 @AllArgsConstructor
@@ -21,5 +24,9 @@ public class HousingService {
         System.out.println(housingRegistrationModel);
         Housing newHousing = new Housing(housingRegistrationModel.getHousingName(), housingRegistrationModel.getHousingCapacity());
         housingRepository.save(newHousing);
+    }
+
+    public Optional<List<Housing>> getAllHousing() {
+        return Optional.of(housingRepository.findAll());
     }
 }

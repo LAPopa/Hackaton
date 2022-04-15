@@ -10,7 +10,9 @@ import lombok.Getter;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Locale;
+import java.util.Optional;
 
 @Service
 @Getter
@@ -28,9 +30,22 @@ public class ActivityService {
         for (Object act : activityRepository.findAll()){
             System.out.println(act);
         }
-
-
     }
 
+    public Optional<List<Activity>> getAllActivities(){
+        return Optional.of(activityRepository.findAll());
+    }
+
+    public Optional<List<Activity>> getOngoingActivities(){
+        return activityRepository.findActivityByIsActive();
+    }
+
+    public Optional<List<Activity>> getActivitiesByType(String activityType){
+        return activityRepository.findActivityByType(activityType);
+    }
+
+    public Optional<List<Activity>> getAvailableActivities(){
+        return activityRepository.findActivityByAvailability();
+    }
 
 }

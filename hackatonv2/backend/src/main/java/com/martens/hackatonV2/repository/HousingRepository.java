@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface HousingRepository extends JpaRepository<Housing, Long> {
 
@@ -13,7 +16,7 @@ public interface HousingRepository extends JpaRepository<Housing, Long> {
     Housing findHousingByName(@Param("house_name") String houseName);
 
     @Query("SELECT h from Housing h where h.availability > 0")
-    Housing findHousingByAvailability();
+    Optional<List<Housing>>  findHousingByAvailability();
 
 
 }

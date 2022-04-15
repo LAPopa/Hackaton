@@ -6,6 +6,9 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface ActivityRepository extends JpaRepository<Activity, Long> {
 
@@ -13,11 +16,11 @@ public interface ActivityRepository extends JpaRepository<Activity, Long> {
     Activity findActivityByName(@Param("activity_name")String activityName);
 
     @Query("SELECT a from Activity a where a.activityType = :activity_type")
-    Activity findActivityByType(@Param("activity_type")String activityType);
+    Optional<List<Activity>> findActivityByType(@Param("activity_type")String activityType);
 
-    @Query("SELECT a from Activity a where a.availableSpots = :activity_availability")
-    Activity findActivityByAvailability(@Param("activity_availability")String activityAvailability);
+    @Query("SELECT a from Activity a where a.availableSpots > 0")
+    Optional<List<Activity>> findActivityByAvailability();
 
     @Query("SELECT a from Activity a where a.isActive = true ")
-    Activity findActivityByIsActive();
+    Optional<List<Activity>> findActivityByIsActive();
 }
