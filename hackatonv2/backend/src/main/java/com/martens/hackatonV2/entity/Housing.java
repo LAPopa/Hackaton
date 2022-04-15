@@ -1,23 +1,28 @@
 package com.martens.hackatonV2.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Getter @Setter
-@AllArgsConstructor @NoArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Housing {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private Long id;
+    @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private int capacity; // how many people can live here
     private int availability; // how many free spots are here
 
+    public Housing(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+        this.availability = capacity; //all spots in the house are initially available
+    }
 }
