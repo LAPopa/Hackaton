@@ -29,4 +29,8 @@ public class HousingService {
     public Optional<List<Housing>> getAllHousing() {
         return Optional.of(housingRepository.findAll());
     }
+
+    public Optional<List<Housing>> getAvailableHousing(){
+        return housingRepository.findHousingByAvailability();
+    }
 }

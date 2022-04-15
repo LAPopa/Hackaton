@@ -5,10 +5,10 @@ import com.martens.hackatonV2.entity.Housing;
 import com.martens.hackatonV2.model.HousingRegistrationModel;
 import com.martens.hackatonV2.service.HousingService;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:3000/")
 @RestController
@@ -22,5 +22,16 @@ public class HousingController {
     @PostMapping("/register/housing")
     public void registerNewHousing(@RequestBody HousingRegistrationModel housingRegistrationModel) {
         housingService.registerNewHousing(housingRegistrationModel);
+    }
+
+
+    @GetMapping("/housing/get-all")
+    public Optional<List<Housing>> getAllHousing(){
+        return housingService.getAllHousing();
+    }
+
+    @GetMapping("/housing/available")
+    public Optional<List<Housing>> getAvailableHousing(){
+        return housingService.getAvailableHousing();
     }
 }
