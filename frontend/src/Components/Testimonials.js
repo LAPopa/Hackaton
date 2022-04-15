@@ -1,7 +1,7 @@
 import React from "react";
 export default function Testimonials(){
     return (<div>
-        <section className="mb-20 text-gray-700">
+        <section className="text-gray-700">
             <div className="text-center md:max-w-xl lg:max-w-3xl mx-auto">
                 <h3 className="text-3xl font-bold mb-6 text-gray-800">Testimonials</h3>
                 <p className="mb-6 pb-2 md:mb-12 md:pb-0">
@@ -11,7 +11,7 @@ export default function Testimonials(){
                 </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="grid md:grid-cols-3 gap-8 text-center px-4">
                 <div>
                     <div className="block rounded-lg shadow-lg bg-white">
                         <div className="overflow-hidden rounded-t-lg h-28" style={{backgroundColor: "#9d789b"}}></div>

@@ -14,8 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
-        <br/>
-        <div>
+        <div className="bg-gray-100">
           <Routes>
             <Route exact path='/' element={<LandingPage/>}/>
             <Route exact path='/register-page' element={<RegisterPage/>}/>
@@ -24,7 +23,6 @@ function App() {
             {/*<Route exact path='/edit-location/:locationId' element={<UpdateForm/>}/>*/}
           </Routes>
         </div>
-        <br/>
         <Footer/>
       </Router>
     </div>

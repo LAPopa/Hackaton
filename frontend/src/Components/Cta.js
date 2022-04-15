@@ -2,8 +2,8 @@ import React from "react";
 export default function Cta(){
     return (
         <section
-            className="max-w-full bg-green-500 dark:bg-gray-800 w-full">
-            <div className="max-w-full mx-auto text-center">
+            className="bg-green-500 h-80 w-full">
+            <div className="w-full mx-auto text-center py-8">
                 <h2 className="text-3xl font-extrabold leading-9 text-white sm:text-4xl sm:leading-10">
                     Used by leading architects, home builders renovators.
                 </h2>

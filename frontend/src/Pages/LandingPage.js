@@ -6,13 +6,13 @@ import Carousel from "../Components/Carousel";
 export default function LandingPage() {
     return(
         <div>
-            <div className="w-full h-80 object-cover">
+            <div className="w-full h-96 object-cover">
                 <Carousel/>
             </div>
-            <div className="grid py-20">
+            <div className="grid">
                 <Cta/>
             </div>
-            <div>
+            <div className="py-10">
                 <Testimonials/>
             </div>
         </div>
