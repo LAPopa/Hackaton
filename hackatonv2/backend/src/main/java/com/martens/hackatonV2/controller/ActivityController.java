@@ -24,23 +24,23 @@ public class ActivityController {
     }
 
     @GetMapping("/activity/get-all")
-    public Optional<List<Activity>> getAllActivities(){
+    public Optional<List<Activity>> getAllActivities() {
         return activityService.getAllActivities();
     }
 
     @GetMapping("/activity/ongoing")
-    public Optional<List<Activity>> getOngoingActivities(){
+    public Optional<List<Activity>> getOngoingActivities() {
         return activityService.getOngoingActivities();
     }
 
     @GetMapping("/activity/of-type")
     @ResponseBody
-    public Optional<List<Activity>> getActivitiesByType(@RequestParam String activityType){
+    public Optional<List<Activity>> getActivitiesByType(@RequestParam String activityType) {
         return activityService.getActivitiesByType(activityType);
     }
 
     @GetMapping("/activity/available")
-    public Optional<List<Activity>> getAvailableActivities(){
+    public Optional<List<Activity>> getAvailableActivities() {
         return activityService.getAvailableActivities();
     }
 
