@@ -18,14 +18,14 @@ public class Activity {
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
-    private ActivityType activityType;
+    private String activityType;
     @Column(nullable = false)
     private int capacity; // how many people can participate
     private int availableSpots; // how many people can still enroll
     private int duration; // !!!! should use a date format?
     private boolean isActive; // is the activity ongoing?
 
-    public Activity(String name, ActivityType activityType, int capacity, int duration) {
+    public Activity(String name, String activityType, int capacity, int duration) {
         this.name = name;
         this.activityType = activityType;
         this.capacity = capacity;

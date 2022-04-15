@@ -14,7 +14,6 @@ import java.util.Locale;
 
 @Service
 @Getter
-@Component
 @AllArgsConstructor
 public class ActivityService {
 
@@ -22,29 +21,7 @@ public class ActivityService {
 
 
     public void registerNewActivity(ActivityRegistrationModel activityRegistrationModel){
-        ActivityType activityType;
-
-        switch (activityRegistrationModel.getActivityType().toUpperCase(Locale.ROOT)) {
-            case "SOWING":
-                activityType = ActivityType.SOWING;
-                break;
-
-            case "HARVESTING":
-                activityType = ActivityType.HARVESTING;
-                break;
-            case "MANUFACTURE":
-                activityType = ActivityType.MANUFACTURE;
-                break;
-            case "MAINTENANCE":
-                activityType = ActivityType.MAINTENANCE;
-                break;
-            default:
-
-                System.out.println("INVALID ACTIVITY TYPE");
-                activityType = null;
-        }
-
-        Activity newActivity = new Activity(activityRegistrationModel.getActivityName(),activityType,activityRegistrationModel.getCapacity(),
+        Activity newActivity = new Activity(activityRegistrationModel.getActivityName(), activityRegistrationModel.getActivityType(), activityRegistrationModel.getCapacity(),
                 activityRegistrationModel.getDuration());
 
         activityRepository.save(newActivity);

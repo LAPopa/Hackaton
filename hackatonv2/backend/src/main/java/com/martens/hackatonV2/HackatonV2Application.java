@@ -1,6 +1,7 @@
 package com.martens.hackatonV2;
 
 import com.martens.hackatonV2.entity.Activity;
+import com.martens.hackatonV2.entity.Housing;
 import com.martens.hackatonV2.model.ActivityRegistrationModel;
 import com.martens.hackatonV2.repository.ActivityRepository;
 import com.martens.hackatonV2.service.ActivityService;
@@ -27,13 +28,14 @@ public class HackatonV2Application {
 
         return (args) -> {
 
-            ActivityRegistrationModel testActivityModel = new ActivityRegistrationModel("Spring sowing", "sowing", 20, 5);
-            Activity newActivity = new Activity("Spring sowing", ActivityType.SOWING, 15, 5);
-            activityRepository.save(newActivity);
+//            ActivityRegistrationModel testActivityModel = new ActivityRegistrationModel("Spring sowing", "sowing", 20, 5);
+//            Activity newActivity = new Activity("Spring sowing", "SOWING", 15, 5);
+//            activityRepository.save(newActivity);
             log.info("Current persisted activities ");
             for (val activity : activityRepository.findAll()) {
                 log.info(activity.toString());
             }
+
 
 
         };
