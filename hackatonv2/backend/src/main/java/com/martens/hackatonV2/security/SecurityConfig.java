@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import static org.springframework.http.HttpMethod.POST;
+
 
 @Configuration
 @EnableWebSecurity
@@ -42,6 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests() // restrict access based on the config below:
                 .antMatchers("/api/auth/**").permitAll()
+                .antMatchers(POST, "/product/add-product").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 // Here we define our custom filter that uses the JWT tokens for authentication.

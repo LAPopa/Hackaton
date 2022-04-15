@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:3000/")
-@RestController("/product")
+@RestController
+@RequestMapping("/product")
 @AllArgsConstructor
 public class ProductController {
 
@@ -17,22 +18,22 @@ public class ProductController {
 
 
     @GetMapping("/get-all")
-    public List<Product> getAllProducts(){
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
-    @GetMapping("/get/{name}")
-    public Optional<List<Product>> getByName(@PathVariable String name) {
+    @GetMapping("/get-name")
+    public Optional<List<Product>> getByName(@RequestParam String name) {
         return productService.getByName(name);
     }
 
-    @GetMapping("/get/{productType}")
-    public Optional<List<Product>> getByProductType(@PathVariable String productType) {
+    @GetMapping("/get-type")
+    public Optional<List<Product>> getByProductType(@RequestParam String productType) {
         return productService.getByProductType(productType);
     }
 
     @PostMapping("/add-product")
-    public void addProduct(@RequestBody Product product){
+    public void addProduct(@RequestBody Product product) {
         productService.addProduct(product);
     }
 }
