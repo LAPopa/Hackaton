@@ -59,3 +59,5 @@ build/
 
 src/main/resources/application.properties
 *.properties
+*.properties
+hackatonv2/backend/src/main/resources/application.properties
