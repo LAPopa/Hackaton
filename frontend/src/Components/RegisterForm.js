@@ -7,12 +7,6 @@ export default function RegisterForm(){
             <div className="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
                 Create a new account
             </div>
-            <span className="justify-center text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
-        Already have an account ?
-        <a href="#" target="_blank" className="text-sm text-blue-500 underline hover:text-blue-700">
-            Sign in
-        </a>
-    </span>
             <div className="p-6 mt-8">
                 <form action="#">
                     <div className="flex flex-col mb-2">
@@ -41,12 +35,12 @@ export default function RegisterForm(){
                                    placeholder="Email"/>
                         </div>
                     </div>
-                    <div className="flex w-full my-4">
+                    <a className="flex w-full my-4">
                         <button type="submit"
-                                className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                className="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg " >
                             Login
                         </button>
-                    </div>
+                    </a>
                 </form>
             </div>
         </div>

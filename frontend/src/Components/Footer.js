@@ -1,29 +1,29 @@
 import React from "react";
 export default function Footer() {
     return(
-        <footer className="bg-white dark:bg-gray-800 w-full py-8">
+        <footer className="bg-green-500 dark:bg-gray-800 w-full py-8">
             <div className="max-w-screen-xl mx-auto px-4">
                 <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-between">
                     <li className="my-2">
-                        <a className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+                        <a className="text-gray-400 hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
                            href="#">
                             FAQ
                         </a>
                     </li>
                     <li className="my-2">
-                        <a className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+                        <a className="text-gray-400 hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
                            href="#">
                             Configuration
                         </a>
                     </li>
                     <li className="my-2">
-                        <a className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+                        <a className="text-gray-400 hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
                            href="#">
                             Github
                         </a>
                     </li>
                     <li className="my-2">
-                        <a className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+                        <a className="text-gray-400 hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
                            href="#">
                             LinkedIn
                         </a>
@@ -31,7 +31,7 @@ export default function Footer() {
                 </ul>
                 <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
                     <a href="#"
-                       className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                       className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                              className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                              viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a href="#"
-                       className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                       className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                              className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                              viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a href="#"
-                       className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                       className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                              className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                              viewBox="0 0 1792 1792">
@@ -61,7 +61,7 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a href="#"
-                       className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                       className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                              className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                              viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a href="#"
-                       className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                       className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                         <svg width="20" height="20" fill="currentColor"
                              className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                              viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
