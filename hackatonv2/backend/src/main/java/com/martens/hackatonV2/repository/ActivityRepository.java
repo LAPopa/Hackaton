@@ -4,8 +4,10 @@ import com.martens.hackatonV2.entity.Activity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
 
-public interface ActivityRepository extends JpaRepository {
+@Repository
+public interface ActivityRepository extends JpaRepository<Activity, Long> {
 
     @Query("SELECT a from Activity a where a.name = :activity_name")
     Activity findActivityByName(@Param("activity_name")String activityName);
