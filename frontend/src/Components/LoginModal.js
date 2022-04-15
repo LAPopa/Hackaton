@@ -8,8 +8,8 @@ export default function LoginModal(){
     return(
         <div className="flex space-x-2">
         <div>
-            <a className="block lg:inline-block mt-4 lg:mt-0 mr-0 text-blue-900 hover:text-indigo-600"
-               data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample" onClick={handleClick}>
+            <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600"
+               data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onClick={handleClick}>
                 Login
             </a>
 
