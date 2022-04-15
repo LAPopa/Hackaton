@@ -1,11 +1,12 @@
 import React from "react";
 import LoginModal from "./LoginModal";
+import RegisterForm from "./RegisterForm";
 export default function Navbar() {
     return(
         <nav className="flex bg-white flex-wrap items-center justify-between p-4">
             <div className="lg:order-2 w-auto lg:w-1/5 lg:text-center">
                 <a className="text-xl text-gray-800 font-semibold font-heading" href="#">
-                    Charlie Rabiller
+                    VillageHub
                 </a>
             </div>
             <div className="block lg:hidden">
@@ -32,16 +33,15 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
-                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-                    Content
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="/register-page" >
+                    Register
                 </a>
-                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
-                    FAQ
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600">
+                    <LoginModal/>
                 </a>
                 <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
                     Contact
                 </a>
-                <LoginModal/>
             </div>
         </nav>
     )
