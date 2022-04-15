@@ -28,8 +28,8 @@ export default function Navbar() {
                 <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600" href="#">
                     Team
                 </a>
-                <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
-                    Galery
+                <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="/shop">
+                    Shop
                 </a>
             </div>
             <div className="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5 lg:text-right">
@@ -39,7 +39,7 @@ export default function Navbar() {
                 <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 text-blue-900 hover:text-indigo-600">
                     <LoginModal/>
                 </a>
-                <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="#">
+                <a className="block lg:inline-block mt-4 lg:mt-0 text-blue-900 hover:text-indigo-600" href="/contact">
                     Contact
                 </a>
             </div>

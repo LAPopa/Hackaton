@@ -6,6 +6,8 @@ import LandingPage from "./Pages/LandingPage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import RegisterPage from "./Pages/RegisterPage";
+import ShopPage from "./Pages/ShopPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
           <Routes>
             <Route exact path='/' element={<LandingPage/>}/>
             <Route exact path='/register-page' element={<RegisterPage/>}/>
-            {/*<Route exact path='/location-list' element={<LocationsList/>}/>*/}
-            {/*<Route exact path='/location/:locationId' element={<LocationPage/>}/>*/}
+            <Route exact path='/shop' element={<ShopPage/>}/>
+            <Route exact path='/contact' element={<ContactPage/>}/>
             {/*<Route exact path='/edit-location/:locationId' element={<UpdateForm/>}/>*/}
           </Routes>
         </div>
