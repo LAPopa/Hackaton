@@ -34,4 +34,10 @@ public class HousingController {
     public Optional<List<Housing>> getAvailableHousing(){
         return housingService.getAvailableHousing();
     }
+
+
+    @GetMapping("/housing/add-resident")
+    public void addResident(@RequestParam String houseName, @RequestParam String residentName) {
+        housingService.addResident(houseName, residentName);
+    }
 }

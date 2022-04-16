@@ -1,7 +1,7 @@
 import React from "react";
-import Poza1 from "../Image/pexels-pixabay-51947.jpg"
-import Poza2 from "../Image/pexels-pixabay-265216.jpg"
-import Poza3 from "../Image/pexels-tim-mossholder-974314.jpg"
+import Poza1 from "../Image/test_carousel.png"
+import Poza2 from "../Image/test_carousel2.png"
+import Poza3 from "../Image/test_carousel3.png"
 export default function Carousel(){
     return (
         <div id="carouselExampleSlidesOnly" className="carousel slide relative" data-bs-ride="carousel">

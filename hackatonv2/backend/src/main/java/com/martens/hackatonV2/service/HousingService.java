@@ -33,4 +33,10 @@ public class HousingService {
     public Optional<List<Housing>> getAvailableHousing(){
         return housingRepository.findHousingByAvailability();
     }
+
+    public void addResident(String houseName, String residentName) {
+        Housing currentHousing = housingRepository.findHousingByName(houseName);
+        currentHousing.addResident(residentName);
+        housingRepository.save(currentHousing);
+    }
 }
