@@ -1,5 +1,54 @@
-import React from "react";
+import React, {useState} from "react";
 export default function LoginForm(){
+
+    const [user, setUser] = useState(
+        {
+            email: "",
+            password: ""
+        }
+    )
+
+    const handleChange = event => {
+        const {name, value} = event.target
+        setUser({...user, [name]: value})
+        console.log(user)
+    }
+
+    const handleSubmit = event => {
+        event.preventDefault()
+        fetch("http://localhost:8080/api/auth/signin",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            }
+        )
+            .then(response => response.json())
+            .then(response => {
+                console.log(JSON.stringify(response))
+
+                if(response.status === 200) {
+                    localStorage.setItem("userId", response.userId)
+                    localStorage.setItem("username", response.username)
+                    localStorage.setItem("token", response.token)
+                    window.location.reload()}
+                else {
+                    setUser({
+                        email: "",
+                        password: ""
+                    })
+                    alert("Invalid credentials!")
+                }
+            })
+            .then(() => {
+
+            })
+            .catch(function () {})
+            // .then(() => window.location.reload())
+    }
+
     return(
         <div
             className="flex flex-col w-full max-w-md px-4 py-8 bg-white rounded-lg sm:px-6 md:px-8 lg:px-10">
@@ -7,7 +56,7 @@ export default function LoginForm(){
                 Login To Your Account
             </div>
             <div className="mt-8">
-                <form action="#" autoComplete="off">
+                <form onSubmit={handleSubmit} autoComplete="off">
                     <div className="flex flex-col mb-2">
                         <div className="flex relative ">
                     <span
@@ -21,7 +70,7 @@ export default function LoginForm(){
                     </span>
                             <input type="text" id="sign-in-email"
                                    className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent"
-                                   placeholder="Your email"/>
+                                   placeholder="Your email" name="email" value={user.email} onChange={handleChange}/>
                         </div>
                     </div>
                     <div className="flex flex-col mb-6">
@@ -35,14 +84,16 @@ export default function LoginForm(){
                                 </path>
                             </svg>
                         </span>
-                            <input type="password" id="sign-in-email"
+                            <input type="password" id="sign-in-password"
                                    className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                                   placeholder="Your password"/>
+                                   placeholder="Your password" name="password" value={user.password} onChange={handleChange}/>
                         </div>
                     </div>
                     <div className="flex w-full">
                         <button type="submit"
-                                className="py-2 px-4 bg-green-500 hover:bg-green-700 focus:ring-green-600 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                className="py-2 px-4 bg-green-500 hover:bg-green-700 focus:ring-green-600 focus:ring-offset-green-200
+                                text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md
+                                focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                             Login
                         </button>
                     </div>

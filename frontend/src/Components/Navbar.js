@@ -29,8 +29,8 @@ export default function Navbar() {
                 <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/">
                     Home
                 </a>
-                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="#">
-                    Team
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/activities">
+                    Activities
                 </a>
                 <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/shop">
                     Shop

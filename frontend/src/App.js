@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import RegisterPage from "./Pages/RegisterPage";
 import ShopPage from "./Pages/ShopPage";
 import ContactPage from "./Pages/ContactPage";
+import ActivityPage from "./Pages/ActivityPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path='/register-page' element={<RegisterPage/>}/>
             <Route exact path='/shop' element={<ShopPage/>}/>
             <Route exact path='/contact' element={<ContactPage/>}/>
+            <Route exact path='/activities' element={<ActivityPage/>}/>
             {/*<Route exact path='/edit-location/:locationId' element={<UpdateForm/>}/>*/}
           </Routes>
         </div>
