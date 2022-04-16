@@ -5,7 +5,7 @@ export default function AboutUs(){
         <div className="bg-lightblue py-20 px-4">
             <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
                 <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">
-                    Frequently-asked questions
+                    About us
                 </h2>
                 <dl className="w-full md:w-2/3">
                     <dt className="mb-4">
@@ -35,15 +35,14 @@ export default function AboutUs(){
                     </dd>
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            Does Valohai charge for computation?
+                            How you can contact us!
                         </h3>
                     </dt>
                     <dd className="mb-16">
                         <p>
-                            Depends. Most of our customers use their own cloud and thus pay for usage according to their
-                            own agreements. Valohai doesn&#x27;t charge anything on top of the per-user license fee. If
-                            you don&#x27;t have a cloud provider, you can use our AWS, GCP and Azure accounts, and
-                            we&#x27;ll only charge you for what you use.
+                            Phone number: +1 (555) 123-0980<br/>
+                            Mail: village.hub@onghub.com<br/>
+                            Address: 1223 W Pratt St, Baltimore, MD 21223, United States
                         </p>
                     </dd>
                 </dl>

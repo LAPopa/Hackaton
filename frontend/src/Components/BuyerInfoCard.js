@@ -36,7 +36,7 @@ export default function CandidateInfoCard() {
                             </svg>
                         </div>
                         <p className="ml-3 text-base leading-6">
-                            Hundreds of available jobs
+                            Handmade and bio products
                         </p>
                     </li>
                     <li className="mt-4 flex items-start">
@@ -49,7 +49,7 @@ export default function CandidateInfoCard() {
                             </svg>
                         </div>
                         <p className="ml-3 text-base leading-6">
-                            Verified companies and posts
+                            Best quality products
                         </p>
                     </li>
                     <li className="mt-4 flex items-start">
@@ -62,7 +62,7 @@ export default function CandidateInfoCard() {
                             </svg>
                         </div>
                         <p className="ml-3 text-base leading-6">
-                            Personalised job posts
+                            Fast delivery
                         </p>
                     </li>
                 </ul>
