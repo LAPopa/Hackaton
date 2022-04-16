@@ -47,9 +47,11 @@ export default function Sidenav(){
           m-0
           focus:text-gray-700 focus:bg-white focus:border-green-500 focus:outline-none" aria-label="Default select example">
                                 <option selected disabled hidden>Product type</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Tea</option>
+                                <option value="2">Soap</option>
+                                <option value="3">Balsam</option>
+                                <option value="4">Preserve</option>
+                                <option value="5">Handicrafts</option>
                             </select>
                         </div>
                     </div>

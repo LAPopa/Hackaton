@@ -8,8 +8,8 @@ export default function Footer() {
                 <div className="max-w-screen-xl mx-auto px-4">
                     <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-between">
                         <li className="my-2">
-                            <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200">
-                                <LoginModal/>
+                            <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200" href="/register-page">
+                                Register
                             </a>
                         </li>
                         <li className="my-2">
