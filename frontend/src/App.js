@@ -12,7 +12,7 @@ import ActivityPage from "./Pages/ActivityPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-100">
       <Router>
         <Navbar/>
         <div className="bg-gray-100">

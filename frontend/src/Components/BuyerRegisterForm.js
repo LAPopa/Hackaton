@@ -24,7 +24,7 @@ export default function BuyerRegisterForm(){
 
     const handleSubmit = event => {
         event.preventDefault()
-        fetch("http://localhost:8080/api/auth/register-worker",
+        fetch("http://localhost:8080/api/auth/register",
             {
                 method: "POST",
                 headers: {

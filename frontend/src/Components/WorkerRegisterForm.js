@@ -23,7 +23,7 @@ export default function WorkerRegisterForm(){
 
     const handleSubmit = event => {
         event.preventDefault()
-        fetch("http://localhost:8080/api/auth/register",
+        fetch("http://localhost:8080/api/auth/register-worker",
             {
                 method: "POST",
                 headers: {
