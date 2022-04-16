@@ -4,6 +4,7 @@ package com.martens.hackatonV2.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -27,5 +28,14 @@ public class Housing {
         this.name = name;
         this.capacity = capacity;
         this.availability = capacity; //all spots in the house are initially available
+        this.residents = new ArrayList<>();
+    }
+    public void addResident(String residentName) {
+        if (availability > 0) {
+            residents.add(residentName);
+            availability -= 1;
+        } else {
+            System.out.println("HOUSE IS FULL");
+        }
     }
 }

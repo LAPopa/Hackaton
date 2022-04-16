@@ -70,7 +70,7 @@ export default function HousingList() {
                         <div className="flex justify-center">
                             <ul className="bg-white rounded-lg w-96 text-gray-900">
                                 {house.residents.map((resident) =>
-                                    <li className="px-6 py-2 border-b border-gray-200 w-full">{resident}</li>
+                                    <li  className="px-6 py-2 border-b border-gray-200 w-full">{resident}</li>
                                 )}
                                 <li className="px-6 py-2 w-full">
                                     <form onSubmit={handleSubmit} id={house.name}>

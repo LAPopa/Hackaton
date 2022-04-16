@@ -1,6 +1,7 @@
 import React from "react";
-export default function AboutUs(){
-    return(
+
+export default function AboutUs() {
+    return (
 
         <div className="bg-lightblue py-20 px-4">
             <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
@@ -10,39 +11,41 @@ export default function AboutUs(){
                 <dl className="w-full md:w-2/3">
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            Ongoing projects.
+                            VillageHub is about people.
                         </h3>
                     </dt>
                     <dd className="mb-16">
                         <p>
-                            Running existing machine learning projects in Valohai is very simple! Integration only
-                            requires adding a valohai.yaml configuration file. Moving projects in and out of Valohai is
-                            easy – the integration is only the configuration file.
+                            And sometimes people need a hand. We offer the help they need to get them through and then
+                            support them to become stable - so that in the future, our participants can help themselves.
                         </p>
                     </dd>
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            How do we compare to other economic and social development organization?
+                            How we do it?
                         </h3>
                     </dt>
                     <dd className="mb-16">
                         <p>
-                            We don’t. Valohai isn’t a data science platform; it&#x27;s a Machine Learning Management
-                            Platform that handles the whole ML pipeline from feature extraction, to training of your
-                            model and to deploying it into production in a reproducible manner. Data science platforms
-                            offer hosted notebooks and AutoML solutions.
+                            We offer (optional) housing for persons that are part of vulnerable communities, offer jobs
+                            in the agricultural field (fruit and medicinal crop tending). Furthermore, we offer training
+                            in the manufacturing process of various handcrafted products that make use of locally grown
+                            crops. Expanding on the manufacture side, we are reviving some of the dying arts of carpet
+                            weaving
+                            and metal rolling to produce jewelry. All of which you can find in our shop !
+                            <br/><a className="text-xl font-semibold" href="http://localhost:3000/shop">Shop here !</a>
                         </p>
                     </dd>
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            How you can contact us!
+                            Contact info
                         </h3>
                     </dt>
                     <dd className="mb-16">
-                        <p>
+                        <p>We are open to collaborating with other NGOs. Always looking for sponsors ! <br/>
                             Phone number: +1 (555) 123-0980<br/>
                             Mail: village.hub@onghub.com<br/>
-                            Address: 1223 W Pratt St, Baltimore, MD 21223, United States
+                            Address: 1223 W Pratt St, Baltimore, MD 21223, Narnia
                         </p>
                     </dd>
                 </dl>
