@@ -34,4 +34,9 @@ public class HousingController {
     public Optional<List<Housing>> getAvailableHousing(){
         return housingService.getAvailableHousing();
     }
+
+    @PostMapping("/housing/add-resident")
+    public void addResidentToHouse(@RequestParam String house, @RequestParam String resident){
+        housingService.addParticipantsToActivity(house, resident);
+    }
 }

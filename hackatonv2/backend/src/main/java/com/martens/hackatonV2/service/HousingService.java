@@ -1,6 +1,7 @@
 package com.martens.hackatonV2.service;
 
 
+import com.martens.hackatonV2.entity.Activity;
 import com.martens.hackatonV2.entity.Housing;
 import com.martens.hackatonV2.model.HousingRegistrationModel;
 import com.martens.hackatonV2.repository.HousingRepository;
@@ -32,5 +33,11 @@ public class HousingService {
 
     public Optional<List<Housing>> getAvailableHousing(){
         return housingRepository.findHousingByAvailability();
+    }
+
+    public void addParticipantsToActivity(String house, String resident) {
+        Housing currentHousing = housingRepository.findHousingByName(house);
+        currentHousing.getResidents().add(resident);
+        housingRepository.save(currentHousing);
     }
 }
