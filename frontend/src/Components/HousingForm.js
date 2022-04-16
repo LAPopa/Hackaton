@@ -18,7 +18,7 @@ export default function HousingForm() {
 
     const handleSubmit = event => {
         event.preventDefault()
-        fetch("http://localhost:8080/register/houses",
+        fetch("http://localhost:8080/register/housing",
             {
                 method: "POST",
                 headers: {
@@ -32,7 +32,7 @@ export default function HousingForm() {
             .then(response => {
                 console.log(JSON.stringify(response))
             })
-        navigate("/housing")
+        navigate("/houses")
     }
     return(
         <div className="block p-6 rounded-lg shadow-lg bg-white w-4/6 m-20 p-10">
