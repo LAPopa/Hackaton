@@ -37,17 +37,17 @@ export default function HousingList() {
         rounded-none
         transition
         focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target={`#${house.name}`} aria-expanded="true" aria-controls={house.name}>
+      " type="button" data-bs-toggle="collapse" data-bs-target={`#${house.name.replace(" ", "")}`} aria-expanded="true" aria-controls={house.name.replace(" ", "")}>
                         {house.name}
                     </button>
                 </h2>
-                <div id={house.name} className="accordion-collapse collapse" aria-labelledby={house.id}
+                <div id={house.name.replace(" ", "")} className="accordion-collapse collapse" aria-labelledby={house.id}
                      data-bs-parent="#accordionExample">
                     <div className="accordion-body py-4 px-5">
                         <div className="flex justify-center">
                             <ul className="bg-white rounded-lg w-96 text-gray-900">
                                 {house.residents.map((resident) =>
-                                    <li className="px-6 py-2 border-b border-gray-200 w-full">{resident}</li>
+                                    <li  className="px-6 py-2 border-b border-gray-200 w-full">{resident}</li>
                                 )}
                             </ul>
                         </div>
