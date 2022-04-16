@@ -8,7 +8,8 @@ import Product6 from "../Image/Product6.jpg"
 import Product7 from "../Image/Product7.jpg"
 import Product8 from "../Image/Product8.jpg"
 import Product9 from "../Image/Product9.jpg"
-export default function Card(){
+
+export default function Card() {
     return (
         <div className="sm:flex flex-wrap justify-center items-center text-center gap-8 px-72">
             <div className="flex justify-center">
@@ -19,7 +20,9 @@ export default function Card(){
                     <div className="p-6 flex flex-col justify-start">
                         <h5 className="text-gray-900 text-xl font-medium mb-2">Earrings</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            Handmade African Fulani Big Hoop Earrings 925 Sterling Silver Women Dangle Jewelry Christmas Gift For Her
+                            Handcrafted earrings.
+                            Made from sterling silver.
+                            <br/>High quality.
                         </p>
                     </div>
                 </div>
@@ -32,8 +35,9 @@ export default function Card(){
                     <div className="p-6 flex flex-col justify-start">
                         <h5 className="text-gray-900 text-xl font-medium mb-2">Bracelets</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Handmade bracelets.
+                            Made from wool yarn and natural materials.
+                            <br/>The perfect gift.
                         </p>
                     </div>
                 </div>
@@ -46,8 +50,9 @@ export default function Card(){
                     <div className="p-6 flex flex-col justify-start">
                         <h5 className="text-gray-900 text-xl font-medium mb-2">Carpet</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Handsewn carpet.
+                            Woven in a traditional technique.
+                            <br/>Embrace the rustic style !
                         </p>
                     </div>
                 </div>
@@ -58,10 +63,11 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product4} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Beauty products</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Oils and ointments</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Carefully prepared in a protected environment.
+                            Made from locally grown medicinal plants.
+                            <br/> A natural cure for what ails you.
                         </p>
                     </div>
                 </div>
@@ -74,8 +80,9 @@ export default function Card(){
                     <div className="p-6 flex flex-col justify-start">
                         <h5 className="text-gray-900 text-xl font-medium mb-2">Tea</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Fresh herbs dried to perfection.
+                            Prepared and packaged to ensure the best experience.
+                            <br/> Enjoy your daily cup.
                         </p>
                     </div>
                 </div>
@@ -88,8 +95,9 @@ export default function Card(){
                     <div className="p-6 flex flex-col justify-start">
                         <h5 className="text-gray-900 text-xl font-medium mb-2">Marmalade</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            A sweet, clean treat.
+                            Just locally grown fruit and sugar - just like grandma makes them !
+                            <br/> For your day to day sweet break.
                         </p>
                     </div>
                 </div>
@@ -100,10 +108,11 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product7} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Pickled peppers</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Pickled vegetables</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Ancient conservation method - modern healthy staple.
+                            Made from locally grown vegetables.
+                            <br/>A tasty dose of probiotics.
                         </p>
                     </div>
                 </div>
@@ -114,28 +123,16 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product8} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Organic soap</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Handmade soap</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Crafted with love and care for your enjoyment.
+                            Made with locally sourced herbs and flowers.
+                            <br/> Pamper your skin - and senses.
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
-                <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
-                    <img
-                        className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
-                        src={Product9} alt=""/>
-                    <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Organic soap</h5>
-                        <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     )
 }

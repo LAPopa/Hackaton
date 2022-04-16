@@ -62,7 +62,7 @@ export default function CandidateInfoCard() {
                             </svg>
                         </div>
                         <p className="ml-3 text-base leading-6">
-                            Fast delivery
+                            Help support the community project !
                         </p>
                     </li>
                 </ul>
