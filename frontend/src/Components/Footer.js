@@ -1,5 +1,6 @@
 import React from "react";
 import "../Css/Footer.css";
+import LoginModal from "./LoginModal";
 export default function Footer() {
     return(
         <div className="maine-footer">
@@ -7,32 +8,31 @@ export default function Footer() {
                 <div className="max-w-screen-xl mx-auto px-4">
                     <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-between">
                         <li className="my-2">
-                            <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
-                               href="#">
-                                FAQ
+                            <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200">
+                                <LoginModal/>
                             </a>
                         </li>
                         <li className="my-2">
                             <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
-                               href="#">
-                                Configuration
+                               href="/contact">
+                                Contact
                             </a>
                         </li>
                         <li className="my-2">
                             <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
-                               href="#">
-                                Github
+                               href="/">
+                                Home
                             </a>
                         </li>
                         <li className="my-2">
                             <a className="text-white hover:text-gray-800 text-white dark:hover:text-white transition-colors duration-200"
-                               href="#">
-                                LinkedIn
+                               href="/shop">
+                                Shop
                             </a>
                         </li>
                     </ul>
                     <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
-                        <a href="#"
+                        <a href="https://www.facebook.com/" target="_blank"
                            className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                             <svg width="20" height="20" fill="currentColor"
                                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
@@ -42,7 +42,7 @@ export default function Footer() {
                                 </path>
                             </svg>
                         </a>
-                        <a href="#"
+                        <a href="http://www.twitter.com/" target="_blank"
                            className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                             <svg width="20" height="20" fill="currentColor"
                                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
@@ -52,7 +52,7 @@ export default function Footer() {
                                 </path>
                             </svg>
                         </a>
-                        <a href="#"
+                        <a href="https://github.com/" target="_blank"
                            className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
@@ -62,7 +62,7 @@ export default function Footer() {
                                 </path>
                             </svg>
                         </a>
-                        <a href="#"
+                        <a href="https://www.linkedin.com/hp" target="_blank"
                            className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                             <svg width="20" height="20" fill="currentColor"
                                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
@@ -72,7 +72,7 @@ export default function Footer() {
                                 </path>
                             </svg>
                         </a>
-                        <a href="#"
+                        <a href="https://www.amazon.com/" target="_blank"
                            className="text-white hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
                             <svg width="20" height="20" fill="currentColor"
                                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"

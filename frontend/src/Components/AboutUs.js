@@ -10,7 +10,7 @@ export default function AboutUs(){
                 <dl className="w-full md:w-2/3">
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            We already have ongoing projects. Will Valohai easily integrate with them?
+                            Ongoing projects.
                         </h3>
                     </dt>
                     <dd className="mb-16">
@@ -22,7 +22,7 @@ export default function AboutUs(){
                     </dd>
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">
-                            How do you compare to other data science platforms?
+                            How do we compare to other economic and social development organization?
                         </h3>
                     </dt>
                     <dd className="mb-16">

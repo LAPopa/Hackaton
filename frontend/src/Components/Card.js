@@ -17,10 +17,9 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product1} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Earrings</h5>
                         <p className="text-gray-700 text-base mb-4">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This
-                            content is a little bit longer.
+                            Handmade African Fulani Big Hoop Earrings 925 Sterling Silver Women Dangle Jewelry Christmas Gift For Her
                         </p>
                     </div>
                 </div>
@@ -31,7 +30,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product2} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Bracelets</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -45,7 +44,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product3} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Carpet</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -59,7 +58,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product4} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Beauty products</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -73,7 +72,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product5} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Tea</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -87,7 +86,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product6} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Marmalade</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -101,7 +100,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product7} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Pickled peppers</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -115,7 +114,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product8} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Organic soap</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
@@ -129,7 +128,7 @@ export default function Card(){
                         className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
                         src={Product9} alt=""/>
                     <div className="p-6 flex flex-col justify-start">
-                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                        <h5 className="text-gray-900 text-xl font-medium mb-2">Organic soap</h5>
                         <p className="text-gray-700 text-base mb-4">
                             This is a wider card with supporting text below as a natural lead-in to additional content. This
                             content is a little bit longer.
