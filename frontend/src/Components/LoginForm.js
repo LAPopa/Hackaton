@@ -33,6 +33,8 @@ export default function LoginForm(){
                     localStorage.setItem("userId", response.userId)
                     localStorage.setItem("username", response.username)
                     localStorage.setItem("token", response.token)
+                    localStorage.setItem("email", response.email)
+                    localStorage.setItem("role", response.roles)
                     window.location.reload()}
                 else {
                     setUser({

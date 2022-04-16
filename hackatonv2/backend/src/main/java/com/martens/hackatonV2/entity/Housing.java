@@ -4,6 +4,7 @@ package com.martens.hackatonV2.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter @Setter
@@ -19,6 +20,8 @@ public class Housing {
     @Column(nullable = false)
     private int capacity; // how many people can live here
     private int availability; // how many free spots are here
+    @ElementCollection(fetch = FetchType.EAGER)
+    private List<String> residents;
 
     public Housing(String name, int capacity) {
         this.name = name;

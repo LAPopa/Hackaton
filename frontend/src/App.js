@@ -9,6 +9,7 @@ import RegisterPage from "./Pages/RegisterPage";
 import ShopPage from "./Pages/ShopPage";
 import ContactPage from "./Pages/ContactPage";
 import ActivityPage from "./Pages/ActivityPage";
+import HousingPage from "./Pages/HousingPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route exact path='/shop' element={<ShopPage/>}/>
             <Route exact path='/contact' element={<ContactPage/>}/>
             <Route exact path='/activities' element={<ActivityPage/>}/>
+            <Route exact path='/houses' element={<HousingPage/>}/>
             {/*<Route exact path='/edit-location/:locationId' element={<UpdateForm/>}/>*/}
           </Routes>
         </div>

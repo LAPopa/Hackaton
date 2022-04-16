@@ -18,6 +18,15 @@ export default function ActivityTable() {
             })
     }, []);
 
+    const handleClick = (event) => {
+        fetch(`http://localhost:8080/activity/add-participant?activityName=${event.target.id}&workerEmail=${localStorage.getItem("email")}`,
+            {
+                method : "POST",
+                headers : {
+                    'Authorization': 'Bearer ' + localStorage.getItem("token")}}
+            )
+    }
+
     return(
         <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
             <div className="py-8">
@@ -77,7 +86,7 @@ export default function ActivityTable() {
                                 <span
                                     className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
                                     <span aria-hidden="true"
-                                          className="absolute inset-0 bg-green-200 opacity-50 rounded-full">
+                                          className={`absolute inset-0 ${activity.active ? "bg-green-200" : "bg-red-200"} opacity-50 rounded-full`}>
                                     </span>
                                     <span className="relative">
                                         {activity.active ? "Active" : "Closed"}
@@ -90,9 +99,15 @@ export default function ActivityTable() {
                                     </p>
                                 </td>
                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                    <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                        Participate
-                                    </a>
+                                     {(activity.active && (activity.capacity - activity.participantsEmails.length !== 0)) ?
+                                            <button id={activity.name}
+                                                    className="text-indigo-600 hover:text-indigo-900"
+                                                    onClick={handleClick}>
+                                                Participate
+                                            </button>
+                                            :
+                                         <></>
+                                    }
                                 </td>
                             </tr>
                             )}

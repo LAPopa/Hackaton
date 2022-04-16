@@ -35,7 +35,6 @@ public class ActivityController {
     }
 
     @GetMapping("/activity/of-type")
-    @ResponseBody
     public Optional<List<Activity>> getActivitiesByType(@RequestParam String activityType) {
         return activityService.getActivitiesByType(activityType);
     }

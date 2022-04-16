@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@CrossOrigin(origins = "http://localhost:3000/")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -55,10 +56,11 @@ public class AuthController {
 
             Map<Object, Object> model = new HashMap<>();
             model.put("userId", client.getId());
-//            model.put("username", client.getUsername());
-//            model.put("roles", roles);
+            model.put("username", client.getUsername());
+            model.put("email", client.getEmail());
+            model.put("roles", roles);
             model.put("token", token);
-//            model.put("status", 200);
+            model.put("status", 200);
             return ResponseEntity.ok(model);
         } catch (AuthenticationException e) {
             throw new BadCredentialsException("Invalid email/password supplied");
