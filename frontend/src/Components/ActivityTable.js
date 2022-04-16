@@ -4,6 +4,7 @@ export default function ActivityTable() {
 
     const [activities, setActivities] = useState([]);
 
+
     useEffect(() => {
         fetch('http://localhost:8080/activity/get-all',
             {
@@ -25,6 +26,7 @@ export default function ActivityTable() {
                 headers : {
                     'Authorization': 'Bearer ' + localStorage.getItem("token")}}
             )
+        window.location.reload();
     }
 
     return(
@@ -99,7 +101,7 @@ export default function ActivityTable() {
                                     </p>
                                 </td>
                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                     {(activity.active && (activity.capacity - activity.participantsEmails.length !== 0)) ?
+                                     {(activity.active && (activity.capacity - activity.participantsEmails.length !== 0) && !activity.participantsEmails.includes(localStorage.getItem("email"))) ?
                                             <button id={activity.name}
                                                     className="text-indigo-600 hover:text-indigo-900"
                                                     onClick={handleClick}>

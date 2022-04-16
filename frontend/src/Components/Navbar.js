@@ -6,6 +6,16 @@ export default function Navbar() {
         document.getElementById("burger-menu1").classList.toggle("hidden");
         document.getElementById("burger-menu2").classList.toggle("hidden");
     }
+
+    const handleLogout = () => {
+        localStorage.removeItem("username")
+        localStorage.removeItem("email")
+        localStorage.removeItem("role")
+        localStorage.removeItem("userId")
+        localStorage.removeItem("token")
+        window.location.reload()
+    }
+
     return(
         <nav className="flex bg-white flex-wrap items-center justify-between p-4">
             <div className="lg:order-2 w-auto lg:w-1/5 lg:text-center">
@@ -40,12 +50,28 @@ export default function Navbar() {
                 </a>
             </div>
             <div className="navbar-menu hidden lg:order-3 lg:block w-full lg:w-2/5" id="burger-menu2">
-                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/register-page" >
-                    Register
+                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/forms-page" >
+                    Forms
                 </a>
-                <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800">
-                    <LoginModal/>
-                </a>
+                {!localStorage.getItem("username") ?
+                <>
+                    <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/register-page" >
+                        Register
+                    </a>
+                    <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800">
+                        <LoginModal/>
+                    </a>
+                </>
+                    :
+                <>
+                    <button className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" onClick={handleLogout}>
+                    Logout
+                    </button>
+                    <p className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800">
+                        {localStorage.getItem("username")}
+                    </p>
+                </>
+                }
                 <a className="block lg:inline-block mt-4 lg:mt-0 mr-10 hover:text-green-800" href="/contact">
                     Contact
                 </a>
