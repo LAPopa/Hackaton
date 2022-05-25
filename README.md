@@ -32,6 +32,9 @@ All the api requests from the frontend side accesses the backend side to send or
 Certain actions (like adding, deleting or updating an activity or housing) are secured and an unauthorized action redirects a guest
 to the register page.
 
+This application was developed during the Codecool organized Hackathon in 36 hours.
+
+
 Application features include:
 
 - A registration and login form<br/><br/>
